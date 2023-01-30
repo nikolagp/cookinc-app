@@ -1,6 +1,6 @@
-# Cook Inc
+# Cook Inc.
 
-![Mappty App Cover](https://github.com/nikolagp/workout-mapp/blob/main/mapty.png?raw=true "Mappty App Cover")
+![Cook Inc. Cover](https://github.com/nikolagp/cookinc-app/blob/main/public/assets/cookinc-featured.png?raw=true "Cook Inc. Cover")
 
 Check it out deployed: 
 
