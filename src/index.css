@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h2 {
+  @apply py-6 text-3xl font-bold text-left text-clrAccent;
+}
+
+h3 {
+  @apply py-3 text-xl font-semibold text-clrSecondary;
+}
+
+body {
+  @apply bg-clrPrimary;
+}
+
+.splide__arrow--prev {
+  left: -1rem;
+}
+
+.splide__arrow--next {
+  right: -1rem;
+}
+
+.splide__arrow svg {
+  @apply fill-clrSecondary;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.active > div {
+  @apply fill-clrAccent bg-clrAccent;
+}
+
+.active > div > svg {
+  @apply fill-clrPrimary bg-clrAccent;
+}
+
+.active-btn {
+  @apply p-3 border rounded-md text-clrPrimary bg-clrSecondary;
+}
+
+.inactive-btn {
+  @apply p-3 border rounded-md border-spacing-3 border-clrSecondary;
+}
