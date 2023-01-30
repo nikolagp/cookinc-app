@@ -26,7 +26,7 @@ With this project I have learned the fundamentals of React and the basic React e
 
 # What issues have I faced and how I resolved them
 
-Most challenging part was routing among the components and sometimes I faced challenges with the props. But a with the help of YouTube and React documentation I become comfortabe working with it by the end of this project.
+Most challenging part was routing among the components and sometimes I faced challenges with the props. But with the help of YouTube, W3Schools and React documentation I become comfortabe working with it by the end of this project.
 
 # Source
 
