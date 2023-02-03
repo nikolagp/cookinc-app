@@ -5,17 +5,14 @@ import '@splidejs/react-splide/css';
 
 function Popular() {
   const [popular, setPopular] = useState([]);
+  const checkLS = localStorage.getItem('popular');
 
   useEffect(() => {
     getPopular();
   }, []);
 
   const getPopular = async () => {
-    const checkLS = localStorage.getItem('popular');
-
-    if (checkLS) {
-      setPopular(JSON.parse(checkLS));
-    } else {
+    if (!checkLS) {
       const api = await fetch(
         `https://api.spoonacular.com/recipes/random?apiKey=c08996dda62a49faad226b9f993c779d&number=8`
       );
@@ -23,6 +20,8 @@ function Popular() {
       localStorage.setItem('popular', JSON.stringify(data.recipes));
       setPopular(data.recipes);
       console.log(data.recipes);
+    } else {
+      setPopular(JSON.parse(checkLS));
     }
   };
 

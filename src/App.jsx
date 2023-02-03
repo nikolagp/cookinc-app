@@ -13,6 +13,12 @@ function App() {
         <Pages />
       </BrowserRouter>
       <Footer />
+      {/* Disclaimer */}
+      {console.log(`
+      Hi everyone! This app is created for learning purposes and
+      the API calls are limited with daily requests. In case the daily quota is
+      exceeded, you may face errors or empty page. So feel free to come back
+      tomorrow and try again. Thanks!`)}
     </div>
   );
 }
