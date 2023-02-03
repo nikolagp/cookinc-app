@@ -19,7 +19,7 @@ function Recipe() {
     fetchDetails();
   }, [params.id]);
   return (
-    <div>
+    <div className="pb-6">
       <h2 className="mb-3 text-center text-clrSecondary">{details.title}</h2>
       <div className="flex flex-col gap-3 md:flex-row">
         <div className="w-full md:w-1/2">

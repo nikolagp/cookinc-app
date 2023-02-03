@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import SingleRecipe from '../components/SingleRecipe';
+import { motion } from 'framer-motion';
 
 function Searched() {
   const [searched, setSearched] = useState([]);
@@ -24,14 +25,20 @@ function Searched() {
   }, [params.search]);
 
   return (
-    <div className="mx-auto">
+    <motion.div
+      className="mx-auto"
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+    >
       <h2 className="">{pageTitle(params.search)}</h2>
       <div className="grid gap-4 mx-auto rounded-md grid-col-1 place-content-center md:grid-cols-2 lg:grid-cols-3">
         {searched.map((pop) => (
           <SingleRecipe key={pop.id} pop={pop} />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
