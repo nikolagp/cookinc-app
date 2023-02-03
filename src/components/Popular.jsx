@@ -27,7 +27,7 @@ function Popular() {
 
   return (
     <div className="">
-      <h2 className="">Popular Recipies</h2>
+      <h2 className="">Popularious Recipies</h2>
       {/* <div className="grid gap-8 mx-8 sm:grid-col-1 place-content-center md:grid-cols-4 "> */}
       <div className="">
         <Splide
