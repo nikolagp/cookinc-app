@@ -21,13 +21,18 @@ function Popular() {
       setPopular(data.recipes);
       console.log(data.recipes);
     } else {
-      setPopular(JSON.parse(checkLS));
+      try {
+        setPopular(JSON.parse(checkLS));
+      } catch (error) {
+        console.error(error);
+        localStorage.removeItem('veggies');
+      }
     }
   };
 
   return (
     <div className="">
-      <h2 className="">Popularious Recipies</h2>
+      <h2 className="">Popular Recipies</h2>
       {/* <div className="grid gap-8 mx-8 sm:grid-col-1 place-content-center md:grid-cols-4 "> */}
       <div className="">
         <Splide

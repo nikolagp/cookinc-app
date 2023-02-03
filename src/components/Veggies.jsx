@@ -23,7 +23,12 @@ function Veggies() {
       setVeggies(data.recipes);
       console.log(data.recipes);
     } else {
-      setVeggies(JSON.parse(checkLS));
+      try {
+        setVeggies(JSON.parse(checkLS));
+      } catch (error) {
+        console.error(error);
+        localStorage.removeItem('veggies');
+      }
     }
   };
 
