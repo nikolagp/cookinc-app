@@ -2,7 +2,7 @@
 
 ![Cook Inc. Cover](https://github.com/nikolagp/cookinc-app/blob/main/public/assets/cookinc-featured.png?raw=true "Cook Inc. Cover")
 
-Check it out deployed: 
+Check it out deployed: https://cook-inc.netlify.app/
 
 An app with recipes where you can search recipies from Spoonacular API.
 
