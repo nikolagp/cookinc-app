@@ -25,7 +25,7 @@ function Popular() {
         setPopular(JSON.parse(checkLS));
       } catch (error) {
         console.error(error);
-        localStorage.removeItem('veggies');
+        localStorage.removeItem('popular');
       }
     }
   };
