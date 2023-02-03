@@ -18,9 +18,7 @@ function Veggies() {
       setVeggies(JSON.parse(checkLS));
     } else {
       const api = await fetch(
-        `https://api.spoonacular.com/recipes/random?apiKey=${
-          import.meta.env.VITE_REACT_APP_API_KEY
-        }&number=6&tags=vegetarian`
+        `https://api.spoonacular.com/recipes/random?apiKey=c08996dda62a49faad226b9f993c779d&number=6&tags=vegetarian`
       );
       const data = await api.json();
       localStorage.setItem('veggies', JSON.stringify(data.recipes));

@@ -13,9 +13,7 @@ function Searched() {
 
   const getSearched = async (search) => {
     const api = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
-        import.meta.env.VITE_REACT_APP_API_KEY
-      }&query=${search}&number=9`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=c08996dda62a49faad226b9f993c779d&query=${search}&number=9`
     );
     const data = await api.json();
     setSearched(data.results);

@@ -15,9 +15,7 @@ function Meal() {
 
   const getMeal = async (name) => {
     const api = await fetch(
-      `https://api.spoonacular.com/recipes/complexSearch?apiKey=${
-        import.meta.env.VITE_REACT_APP_API_KEY
-      }&query=${name}&number=9`
+      `https://api.spoonacular.com/recipes/complexSearch?apiKey=c395478ec467453aacc21e9ad5c2a3c8&query=${name}&number=9`
     );
     const data = await api.json();
     setMeal(data.results);
