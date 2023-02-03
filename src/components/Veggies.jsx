@@ -35,7 +35,7 @@ function Veggies() {
   return (
     <div className="mx-auto">
       <h2 className="">Veggies Recipies</h2>
-      <div className="grid gap-4 mx-auto rounded-md grid-col-1 place-content-center md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid md:gap-12 mx-auto place-content-between rounded-md grid-col-1 md:grid-cols-2 lg:grid-cols-3">
         {veggies.map((pop) => (
           <SingleRecipe key={pop.id} pop={pop} />
         ))}

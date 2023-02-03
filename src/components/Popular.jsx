@@ -37,16 +37,16 @@ function Popular() {
       <div className="">
         <Splide
           options={{
-            perPage: 3,
+            perPage: 4,
             arrows: true,
             pagination: false,
             drag: 'free',
-            gap: '1 rem',
+            gap: '0.5rem',
           }}
         >
           {popular.map((pop) => (
             <SplideSlide key={pop.id}>
-              <SingleRecipe key={pop.id} pop={pop} />
+              <SingleRecipe className="h-8" key={pop.id} pop={pop} />
             </SplideSlide>
           ))}
         </Splide>

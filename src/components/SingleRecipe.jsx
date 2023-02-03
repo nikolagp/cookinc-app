@@ -9,7 +9,7 @@ function SingleRecipe(props) {
   return (
     <div className="py-8">
       <Link to={'/recipe/' + pop.id}>
-        <div className="max-w-xs mx-8 rounded-lg">
+        <div className="mx-6 rounded-lg">
           <img className="rounded-lg" src={pop.image} alt="" />
           <div className="flex flex-row justify-between px-5 pt-4">
             {/* <p className="mb-3 font-normal text-gray-700 dark:text-gray-600">

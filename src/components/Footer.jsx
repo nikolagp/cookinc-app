@@ -7,7 +7,7 @@ function Footer() {
         Made with ♥ by{' '}
         <a
           href="https://nikolagp.com"
-          className="text-clrAccent"
+          className="text-clrSecondary"
           target="_blank"
         >
           Nikola G.
@@ -15,23 +15,23 @@ function Footer() {
         using{' '}
         <a
           href="https://reactjs.org/"
-          className="text-clrSecondary"
+          className="text-clrPrimary"
           target="_blank"
         >
           React
-        </a>
-        ,{' '}
+        </a>{' '}
+        -{' '}
         <a
           href="https://tailwindcss.com/"
-          className="text-clrSecondary"
+          className="text-clrPrimary"
           target="_blank"
         >
           TailwindCSS
-        </a>
-        ,{' '}
+        </a>{' '}
+        -{' '}
         <a
           href="https://spoonacular.com/food-api"
-          className="text-clrSecondary"
+          className="text-clrPrimary"
           target="_blank"
         >
           API
